@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>		
+	<title> Cadastro Cliente</title>
+		<style type="text/css">
+			div {
+				margin-top: 30px;
+				margin-bottom: 100px;
+				margin-right: 200px;
+				margin-left: 50px;
+			}
+			div.posicao{
+			position: fixed;
+			top: 30px;
+			right: 5px;
+			height: 100px;
+			width: 100px;
+			background-color: green; }
+
+			div {
+				margin: 20px 100px 50px 50px;
+			}
+			p {
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+			}
+			p{
+				padding: 10px 10px 10px 10px;
+			}
+			#header {
+				background-color:black;
+				color:white;
+				text-align:center;
+				padding:5px;}
+			#nav {
+				line-height:30px;
+				background-color:#eeeeee;
+				height:200px;
+				width:170px;
+				float:left;
+				padding:20px; }
+			#section {
+				background-color:beige;
+				height:400px;
+				color:black;
+				width:800px;
+				float:left;
+				padding:10px;}
+			#footer {
+				background-color:black;
+				color:white;
+				clear:both;
+				text-align:center;
+				padding:5px;}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<h1>Farmacart</h1>
+		</div>
+		<div id="nav">
+			<a href="Receita.php">
+			Remédios com prescrição</a><br>
+			<a href="CadastroCliente.html"> 
+			Cadastro do Comprador</a><br>
+			<a href="CadastroUsuario.php">
+			Cadastro de Usuário</a><br>
+			
+		</div>
+		<div id="section">
+			<p>CADASTRO DO COMPRADOR</p>
+			<form>
+			<fieldset>
+			<br>
+			Cidade:
+			<input type="text"
+			    name="cidade">
+			Bairro:
+			<input type="text"
+			    name="bairro">
+			Rua/Avenida:
+			<input type="text"
+			    name="rua">
+			CEP:
+			<input type="number"
+			    name="cep"
+			 step="1">
+			Numero:
+			<input type="number"
+			    name="num" step="1">
+			Complemento:
+			<input type="text"
+			    name="complemento">
+			<br><br><br>
+			Numero do cartao:
+			<input type="number"
+			    name="numcart" step="6">
+			Codigo CVV - 3 algorismos (verso do cartao):
+			<input type="number"
+			min="0" max="999"
+			    name="cvv" step="1"><br>
+			Validade do cartao:
+			<input type="month"
+			    name="mes">
+			<br><br>
+			<input type="submit"
+			value="Cadastrar">
+			</fieldset>
+			</form>
+		</div>
+		<div id="footer"> Copyright @Farmacart</div>
+	</body>
+</html>
+
